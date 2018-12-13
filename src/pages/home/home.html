@@ -1,14 +1,34 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>  
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div *ngIf="picture">
+    
+    <img [src]="picture">
+    
+    <ion-fab bottom center>
+      <button ion-fab (click)="startCamera()">
+        <ion-icon name="arrow-dropleft"></ion-icon>
+      </button>
+    </ion-fab>
+
+    <ion-fab bottom right>
+      <button ion-fab (click)="switchCamera()">
+        <ion-icon name="cloud-upload"></ion-icon>
+      </button>
+    </ion-fab>
+    
+  </div>
+
+  <div *ngIf="!picture" class="base">
+    <div class="center">
+      <div class="retangulo">
+          <div class="vl"></div>
+      </div>    
+    </div>
+    <ion-fab bottom center>
+        <button ion-fab (click)="takePicture()">
+          <ion-icon name="camera"></ion-icon>
+        </button>
+      </ion-fab>
+  </div>    
+
 </ion-content>

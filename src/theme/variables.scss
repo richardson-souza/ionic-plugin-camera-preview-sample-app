@@ -38,9 +38,12 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  primaryColor: #006f36,
+  primaryLightColor: #439e61,
+  primaryDarkColor: #00420e,
+  primaryTextColor: #ffffff
 );
-
 
 // App iOS Variables
 // --------------------------------------------------
@@ -53,6 +56,8 @@ $colors: (
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
+$fab-md-background-color: color($colors, primaryColor);
+$fab-md-text-color: color($colors, primaryTextColor);
 
 
 

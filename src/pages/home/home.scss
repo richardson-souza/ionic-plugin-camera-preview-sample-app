@@ -6,48 +6,38 @@ $r: 3em;
 
 .box {
     overflow: hidden;
-    //position: absolute;
     position: relative;
-    //margin: .25em auto;
     max-width: 80em;
     min-height: 50em;
-    //border-radius: 1em;
     
     &:before {
         left: 25%;
-        top: 30%; // distancia em relação ao topo
+        top: 15%; // distancia em relação ao topo
         width: 50%;
-        height: 30%; // altura do quadrado
+        height: 50%; // altura do quadrado
         position: absolute;
         margin: -$r;
         padding: $r;
-        //border-radius: 50%;
         box-shadow: 0 0 0 300px rgba(rgb(17, 17, 17), .80);
         content: '';
     }
 }
 
-.vl {
+// Linha horizontal vermelha
+.vl { 
     border-left: 1px solid #d30000;
-    //border-style: dashed;
-    top: 25%;
-    height: 40%;
-    //position: relative;
+    top: 10%;
+    height: 60%;
     position: absolute;
-    left: 50%;
-    //margin-left: -2px;    
+    left: 50%;  
 }
 
 .retangulo {
-    top: 25%;
+    top: 10%;
     left: 15%;
     width: 70%;
-    height: 40%;
-    //margin: auto;
+    height: 60%;
     border: 4px solid rgb(255, 255, 255);
     border-style: dashed;
     position: absolute;
-    //display: block;
-    //width: 50%;
-    //height: 50%;
 }
